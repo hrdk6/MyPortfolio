@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hardik Gaonkar</title>
+  <meta name="description" content="Hardik Gaonkar is an AI & ML engineer in Bengaluru building LLM systems end to end (RAG, AI agents, ML and computer vision) and proving they work with benchmarks, confidence intervals and CI gates.">
+  <meta name="theme-color" content="#05060d">
+  <meta name="author" content="Hardik Santosh Gaonkar">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hardik Gaonkar · AI & ML Engineer">
+  <meta property="og:description" content="LLM systems, RAG, AI agents and computer vision, each shipped with benchmarks, confidence intervals and CI quality gates.">
+  <meta property="og:image" content="https://hrdk6.github.io/MyPortfolio/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist+Mono:wght@400;500&family=Geist:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hardik Santosh Gaonkar",
+    "jobTitle": "AI & ML Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+    "alumniOf": "BMS Institute of Technology and Management",
+    "email": "mailto:hardikgaonkar2025@gmail.com",
+    "sameAs": ["https://github.com/hrdk6", "https://www.linkedin.com/in/hardik-gaonkar-b7706a376"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Background: WebGL liquid field, graph-paper dots, film grain -->
+  <div class="bg" aria-hidden="true">
+    <canvas id="aurora"></canvas>
+    <div class="bg-fallback"></div>
+    <div class="bg-grain"></div>
+  </div>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 17h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.18 7.69 10.67.56.1.77-.24.77-.54l-.02-2.1c-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.8 10.8 0 0 1 5.64 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08l-.01 3.08c0 .3.2.65.78.54 4.46-1.49 7.68-5.7 7.68-10.67C23.25 5.48 18.27.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.54h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.02c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V21h-4V9.75Z"/></symbol>
+  </svg>
+
+  <!-- ───────────── Navigation ───────────── -->
+  <header class="nav-wrap">
+    <nav class="nav glass" data-liquid data-liquid-scale="36" data-liquid-bezel="18" data-liquid-blur="10" aria-label="Primary">
+      <a class="nav-logo" href="#top" aria-label="Hardik Gaonkar, back to top">
+        <span>HG</span>
+      </a>
+      <div class="nav-links">
+        <span class="nav-drop" aria-hidden="true"></span>
+        <a href="#proof" data-nav="proof">Proof</a>
+        <a href="#work" data-nav="work">Work</a>
+        <a href="#toolkit" data-nav="toolkit">Toolkit</a>
+        <a href="#journey" data-nav="journey">Journey</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="assets/Hardik_Gaonkar_Resume.pdf" target="_blank" rel="noopener">Résumé <svg><use href="#i-arrow"/></svg></a>
+      <button class="nav-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-menu-bars" aria-hidden="true"><i></i><i></i></span>
+        <span class="sr">Menu</span>
+      </button>
+      <span class="nav-progress" aria-hidden="true"></span>
+    </nav>
+    <div class="mobile-menu glass" id="mobile-menu" hidden>
+      <a href="#proof">Proof</a>
+      <a href="#work">Work</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Hardik_Gaonkar_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero-dots" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <a class="status glass" href="#contact" data-liquid data-liquid-scale="24" data-liquid-bezel="12" data-liquid-blur="8">
+          <span class="status-dot" aria-hidden="true"></span>
+          Open to AI/ML engineering internships
+        </a>
+
+        <h1 class="hero-name" id="hero-name">
+          <span class="hero-name-line"><span>Hardik</span></span>
+          <span class="hero-name-line"><span>Gaonkar</span></span>
+        </h1>
+
+        <div class="hero-orb-zone" aria-hidden="true">
+          <div class="orb" data-liquid data-liquid-bezel="full" data-liquid-scale="90" data-liquid-curve="1.6" data-liquid-blur="0.6" data-liquid-sat="1.8">
+            <span class="orb-caustic"></span>
+            <span class="orb-shine"></span>
+          </div>
+          <span class="orb-hint">drag the lens</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-role">AI &amp; ML engineer in Bengaluru building LLM systems that <em>prove</em> they work.</p>
+            <p class="hero-lede">I build end to end: RAG, AI agents, machine learning and computer vision. Every system ships with held-out benchmarks, confidence intervals and CI quality gates, so the numbers hold up when someone checks.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#work" data-liquid data-liquid-scale="30" data-liquid-bezel="14" data-liquid-blur="6">
+                See the work <svg><use href="#i-down"/></svg>
+              </a>
+              <a class="btn glass" href="assets/Hardik_Gaonkar_Resume.pdf" target="_blank" rel="noopener" data-liquid data-liquid-scale="30" data-liquid-bezel="14" data-liquid-blur="6">
+                <svg><use href="#i-file"/></svg> Résumé
+              </a>
+            </div>
+            <ul class="hero-focus" aria-label="Focus areas">
+              <li>RAG</li><li>AI agents</li><li>Machine learning</li><li>Computer vision</li>
+            </ul>
+          </div>
+
+          <figure class="term glass" data-tilt aria-label="Evaluation summary across my three main projects">
+            <div class="term-bar">
+              <span class="term-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="term-title">hardik@bengaluru: ~/work</span>
+            </div>
+            <div class="term-body" role="presentation">
+              <p class="tl cmd" data-type><span class="pr">$</span> <span class="tx">make eval</span></p>
+              <p class="tl head">▸ careflow-ai <span class="dim">hybrid RAG · 48 questions</span></p>
+              <p class="tl row"><span class="k">recall@1</span><span class="v">0.955</span></p>
+              <p class="tl row"><span class="k">mrr</span><span class="v">0.977</span></p>
+              <p class="tl head">▸ groundtruth <span class="dim">self-verifying RAG</span></p>
+              <p class="tl row"><span class="k">faithfulness</span><span class="v">0.94–0.97</span></p>
+              <p class="tl row"><span class="k">unanswerable</span><span class="v">100% declined</span></p>
+              <p class="tl cmd" data-type><span class="pr">$</span> <span class="tx">pytest -q</span></p>
+              <p class="tl row"><span class="k">careflow-ai</span><span class="v ok">269 passed</span></p>
+              <p class="tl row"><span class="k">patchpilot</span><span class="v ok">421 passed</span></p>
+              <p class="tl row"><span class="k">groundtruth</span><span class="v ok">256 passed</span></p>
+              <p class="tl done"><span class="ok">✓</span> quality gates green</p>
+              <p class="tl cmd last"><span class="pr">$</span> <span class="caret" aria-hidden="true"></span></p>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#proof" aria-label="Scroll to proof section"><span></span></a>
+    </section>
+
+    <!-- ───────────── Proof ───────────── -->
+    <section class="section" id="proof" aria-labelledby="proof-title">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow">Proof</p>
+          <h2 class="sec-title" id="proof-title" data-split>Every claim comes with a <em>benchmark.</em></h2>
+          <p class="sec-lede" data-reveal>I treat evaluation as part of the product. Here is what the three systems I have built measure out to.</p>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile-about glass spot" data-reveal>
+            <p class="tile-label">About</p>
+            <p class="about-text">I study <strong>Artificial Intelligence and Machine Learning</strong> at BMS Institute of Technology and Management, Bengaluru. I like the whole path of an AI system: data, retrieval, models, the API around them and the interface on top.</p>
+            <p class="about-text">What I care about most is knowing whether it works. I hold out test sets, report confidence intervals instead of single numbers, and put regression gates in CI so a change that makes things worse cannot merge.</p>
+            <div class="about-meta">
+              <span class="chip">B.E. AI &amp; ML · 2024–2028</span>
+              <span class="chip">CGPA 8.09 / 10</span>
+              <span class="chip"><span class="live-dot" aria-hidden="true"></span> Bengaluru · <time class="clock" data-clock>IST</time></span>
+            </div>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal style="--d:80ms">
+            <p class="tile-label">Automated tests</p>
+            <p class="stat"><span data-count="946">946</span></p>
+            <p class="tile-note">across three systems: 269 + 421 + 256</p>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal style="--d:160ms">
+            <p class="tile-label">Recall@1 · hybrid RAG</p>
+            <p class="stat"><span data-count="0.955" data-decimals="3">0.955</span></p>
+            <p class="tile-note">MRR 0.977 on a 48-question benchmark, CareFlow AI</p>
+          </article>
+
+          <article class="tile tile-chart glass spot" data-reveal style="--d:120ms">
+            <div class="tile-row">
+              <p class="tile-label">Context precision after reranking</p>
+              <p class="tile-delta">+0.22</p>
+            </div>
+            <div class="bars" role="img" aria-label="Context precision rose from 0.62 without reranking to 0.84 with cross-encoder reranking, on a scale from 0 to 1.">
+              <div class="bar-row">
+                <span class="bar-k">Without</span>
+                <span class="bar-track"><span class="bar-fill muted" style="--v:.62"></span></span>
+                <span class="bar-v">0.62</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-k">Reranked</span>
+                <span class="bar-track"><span class="bar-fill" style="--v:.84"></span></span>
+                <span class="bar-v">0.84</span>
+              </div>
+              <div class="bar-axis" aria-hidden="true"><span>0</span><span>0.25</span><span>0.5</span><span>0.75</span><span>1</span></div>
+            </div>
+            <p class="tile-note">Cross-encoder reranking in CareFlow AI's retrieval pipeline.</p>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal>
+            <p class="tile-label">Patient encounters</p>
+            <p class="stat"><span data-count="99">99</span>K</p>
+            <p class="tile-note">behind calibrated readmission and length-of-stay models</p>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal style="--d:80ms">
+            <p class="tile-label">Measurement bugs caught</p>
+            <p class="stat"><span data-count="13">13</span></p>
+            <p class="tile-note">by a self-audit, including a spurious +0.50 recall@5 gain</p>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal style="--d:160ms">
+            <p class="tile-label">Unanswerables declined</p>
+            <p class="stat"><span data-count="100">100</span>%</p>
+            <p class="tile-note">GroundTruth abstains when its sources don't support an answer</p>
+          </article>
+
+          <article class="tile tile-stat glass spot" data-reveal style="--d:240ms">
+            <p class="tile-label">Chest X-ray ROC-AUC</p>
+            <p class="stat stat-range">0.71<span class="dash">–</span>0.80</p>
+            <p class="tile-note">8 findings on 7.5K patient-disjoint test films</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Work ───────────── -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="sec-title" id="work-title" data-split>Three systems, built end to end and <em>measured.</em></h2>
+        </header>
+
+        <!-- CareFlow AI -->
+        <article class="case glass spot" data-reveal aria-labelledby="careflow-title">
+          <div class="case-grid">
+            <div class="case-copy">
+              <p class="case-kicker">Clinical AI platform</p>
+              <h3 class="case-title" id="careflow-title">CareFlow AI</h3>
+              <p class="case-sum">A full-stack clinical assistant where the LLM only ever sees data the signed-in user may access. Role checks and row-level SQL filters run before any retrieval, ML or generation, and a deterministic router plans the SQL, RAG and ML tool calls.</p>
+              <ul class="case-points">
+                <li><strong>Hybrid RAG.</strong> bge-small embeddings with BM25, RRF fusion, cross-encoder reranking and citation validation.</li>
+                <li><strong>Explainable risk models</strong> on 99K encounters: a calibrated Random Forest for 30-day readmission (PR-AUC 2× base rate, SHAP) and XGBoost length of stay, with patient-grouped splits and leakage ablations.</li>
+                <li><strong>X-ray triage.</strong> Logistic heads on frozen ResNet-50 (ONNX) features, trained on 26K NIH ChestX-ray14 films, with class activation maps.</li>
+                <li><strong>Privacy gateway.</strong> An identifier vault, regex and ONNX BERT NER pseudonymize patient data before prompts reach cloud LLMs, then restore it server-side.</li>
+              </ul>
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>FastAPI</li><li>PostgreSQL + pgvector</li><li>scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>ONNX Runtime</li><li>Next.js</li><li>TypeScript</li><li>Docker</li>
+              </ul>
+              <a class="btn btn-sm glass" href="https://github.com/hrdk6/CareFlow-AI" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> hrdk6/CareFlow-AI <svg class="ar"><use href="#i-arrow"/></svg></a>
+            </div>
+
+            <figure class="case-visual screen" data-tilt aria-label="CareFlow AI request path: access control, routing, tools, privacy gateway, then the LLM">
+              <figcaption class="screen-cap"><span>Request path</span><span class="dim">access checks run first</span></figcaption>
+              <div class="flow">
+                <div class="fnode">Clinician question <small>signed-in user</small></div>
+                <div class="flink"></div>
+                <div class="fnode guard">RBAC + row-level SQL filters</div>
+                <div class="flink"></div>
+                <div class="fnode">Deterministic router</div>
+                <svg class="fsplit" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M150 0 C150 22 50 18 50 40"/><path d="M150 0 L150 40"/><path d="M150 0 C150 22 250 18 250 40"/>
+                  <path class="run" d="M150 0 C150 22 50 18 50 40"/><path class="run" d="M150 0 L150 40"/><path class="run" d="M150 0 C150 22 250 18 250 40"/>
+                </svg>
+                <div class="frow">
+                  <div class="fnode sm">SQL</div>
+                  <div class="fnode sm">Hybrid RAG</div>
+                  <div class="fnode sm">ML + X-ray</div>
+                </div>
+                <svg class="fsplit merge" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M50 0 C50 22 150 18 150 40"/><path d="M150 0 L150 40"/><path d="M250 0 C250 22 150 18 150 40"/>
+                  <path class="run" d="M50 0 C50 22 150 18 150 40"/><path class="run" d="M150 0 L150 40"/><path class="run" d="M250 0 C250 22 150 18 150 40"/>
+                </svg>
+                <div class="fnode guard">Privacy gateway <small>vault · regex · BERT NER</small></div>
+                <div class="flink"></div>
+                <div class="fnode llm">LLM <small>Groq → Gemini → extractive</small></div>
+              </div>
+            </figure>
+          </div>
+          <dl class="metrics">
+            <div><dt>Recall@1</dt><dd>0.955</dd></div>
+            <div><dt>MRR</dt><dd>0.977</dd></div>
+            <div><dt>Context precision</dt><dd>0.62 → 0.84</dd></div>
+            <div><dt>Automated tests</dt><dd>269</dd></div>
+          </dl>
+        </article>
+
+        <!-- PatchPilot -->
+        <article class="case glass spot case-flip" data-reveal aria-labelledby="patchpilot-title">
+          <div class="case-grid">
+            <div class="case-copy">
+              <p class="case-kicker">Autonomous coding agent</p>
+              <h3 class="case-title" id="patchpilot-title">PatchPilot</h3>
+              <p class="case-sum">Give it a repository and a bug report and it returns a tested patch. A 9-node LangGraph state machine indexes the code, retrieves context, plans, writes a patch, tests it in a sandbox, and feeds failures back into a budget-capped repair loop.</p>
+              <ul class="case-points">
+                <li><strong>Explainable retrieval.</strong> AST-based, symbol-level chunking and hybrid ranking over 7 weighted signals (semantic, lexical, import/call graph, failure trace and more), logging why each chunk entered the prompt.</li>
+                <li><strong>Hardened sandbox.</strong> LLM-written code runs in Docker with no network, a non-root user, all capabilities dropped and CPU, memory, PID and time limits. A patch policy blocks CI configs, lockfiles and path traversal, and redacts secrets.</li>
+                <li><strong>Benchmark harness.</strong> Model-agnostic across OpenAI, Anthropic and Ollama, reporting pass rate with Wilson 95% CIs, p50/p95 latency, tokens and cost.</li>
+              </ul>
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>LangGraph</li><li>FastAPI</li><li>SQLAlchemy</li><li>Qdrant</li><li>Docker</li><li>React</li><li>TypeScript</li><li>GitHub Actions</li>
+              </ul>
+              <a class="btn btn-sm glass" href="https://github.com/hrdk6/PatchPilot" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> hrdk6/PatchPilot <svg class="ar"><use href="#i-arrow"/></svg></a>
+            </div>
+
+            <figure class="case-visual screen" data-tilt aria-label="PatchPilot's main loop: index, retrieve, plan, patch, sandbox test, and repair back to patch when tests fail">
+              <figcaption class="screen-cap"><span>Agent loop</span><span class="dim">illustrative run</span></figcaption>
+              <div class="graph" data-graph>
+                <div class="gtop" data-gtop>
+                  <div class="gpath">
+                    <span class="gnode" data-n="index">index</span>
+                    <span class="garrow" aria-hidden="true"></span>
+                    <span class="gnode" data-n="retrieve">retrieve</span>
+                    <span class="garrow" aria-hidden="true"></span>
+                    <span class="gnode" data-n="plan">plan</span>
+                    <span class="garrow" aria-hidden="true"></span>
+                    <span class="gnode" data-n="patch">patch</span>
+                    <span class="garrow" aria-hidden="true"></span>
+                    <span class="gnode" data-n="test">sandbox test</span>
+                  </div>
+                  <svg class="gloop" aria-hidden="true">
+                    <defs><marker id="gl-head" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 8 4 0 8z" fill="rgb(255 123 138 / .8)"/></marker></defs>
+                    <path class="gl-a"/><path class="gl-b" marker-end="url(#gl-head)"/>
+                  </svg>
+                  <span class="gnode repair" data-n="repair">repair ↺</span>
+                </div>
+                <div class="glog" aria-live="off">
+                  <p data-log="0"><span class="dim">attempt 1</span> sandbox test <span class="bad">✗ 2 failing</span></p>
+                  <p data-log="1"><span class="dim">repair</span> failures fed back to the LLM</p>
+                  <p data-log="2"><span class="dim">attempt 2</span> sandbox test <span class="ok">✓ all passing</span></p>
+                </div>
+                <ul class="sandbox" aria-label="Sandbox limits">
+                  <li>--network none</li><li>non-root</li><li>cap-drop ALL</li><li>cpu · mem · pid · time limits</li>
+                </ul>
+              </div>
+            </figure>
+          </div>
+          <dl class="metrics">
+            <div><dt>LangGraph nodes</dt><dd>9</dd></div>
+            <div><dt>Retrieval signals</dt><dd>7</dd></div>
+            <div><dt>Pass-rate CIs</dt><dd>Wilson 95%</dd></div>
+            <div><dt>Automated tests</dt><dd>421</dd></div>
+          </dl>
+        </article>
+
+        <!-- GroundTruth -->
+        <article class="case glass spot" data-reveal aria-labelledby="groundtruth-title">
+          <div class="case-grid">
+            <div class="case-copy">
+              <p class="case-kicker">Self-verifying RAG</p>
+              <h3 class="case-title" id="groundtruth-title">GroundTruth</h3>
+              <p class="case-sum">Version-aware RAG over multi-release Kubernetes docs. It checks every sentence it writes against the cited source, regenerates once when a check fails, and declines to answer when the docs don't support one.</p>
+              <ul class="case-points">
+                <li><strong>Retrieval in SQL.</strong> pgvector HNSW plus BM25 implemented in SQL (matching a Python reference to 1e-9), RRF fusion, query rewriting and multi-hop decomposition.</li>
+                <li><strong>Rigorous evaluation.</strong> Bootstrap 95% CIs, paired significance tests and a CI regression gate on every change. A self-audit caught 13 measurement bugs.</li>
+                <li><strong>Decisions from data.</strong> Dropped cross-encoder reranking after measuring about 100× latency for no significant recall gain. Per-stage tracing, six-way failure attribution and a Next.js trace viewer.</li>
+              </ul>
+              <ul class="tags" aria-label="Tech stack">
+                <li>Python</li><li>FastAPI</li><li>PostgreSQL + pgvector</li><li>Sentence-Transformers</li><li>Claude / NVIDIA NIM</li><li>Next.js</li>
+              </ul>
+              <a class="btn btn-sm glass" href="https://github.com/hrdk6/GroundTruth" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> hrdk6/GroundTruth <svg class="ar"><use href="#i-arrow"/></svg></a>
+            </div>
+
+            <figure class="case-visual screen" data-tilt aria-label="GroundTruth checks each generated sentence against its cited source, and its faithfulness and citation precision ranges">
+              <figcaption class="screen-cap"><span>Sentence verification</span><span class="dim">illustrative trace</span></figcaption>
+              <div class="verify" data-verify>
+                <p class="vq"><span class="dim">Q</span> How do I roll back a Deployment? <span class="ver">k8s v1.29</span></p>
+                <p class="vs" data-s="0"><span class="vt">kubectl rollout undo returns a Deployment to its previous revision.<sup>[1]</sup></span><span class="vb"><i class="v-ok">supported</i><i class="v-check">checking</i></span></p>
+                <p class="vs" data-s="1"><span class="vt">Add --to-revision to choose a specific revision.<sup>[1]</sup></span><span class="vb"><i class="v-ok">supported</i><i class="v-check">checking</i></span></p>
+                <p class="vs" data-s="2"><span class="vt">A rollback also restores the ConfigMaps it used.<sup>[2]</sup></span><span class="vb"><i class="v-bad">unsupported</i><i class="v-regen">regenerated</i><i class="v-check">checking</i></span></p>
+              </div>
+              <div class="ranges" role="img" aria-label="Faithfulness ranged from 0.94 to 0.97 and citation precision from 0.90 to 1.00 across dev and test sets, on an axis from 0.80 to 1.00.">
+                <div class="range-row">
+                  <span class="range-k">Faithfulness</span>
+                  <span class="range-track"><span class="range-fill" style="--a:.70;--b:.85"></span></span>
+                  <span class="range-v">0.94–0.97</span>
+                </div>
+                <div class="range-row">
+                  <span class="range-k">Citation precision</span>
+                  <span class="range-track"><span class="range-fill" style="--a:.50;--b:1"></span></span>
+                  <span class="range-v">0.90–1.00</span>
+                </div>
+                <div class="range-axis" aria-hidden="true"><span>0.80</span><span>0.85</span><span>0.90</span><span>0.95</span><span>1.00</span></div>
+              </div>
+            </figure>
+          </div>
+          <dl class="metrics">
+            <div><dt>Faithfulness</dt><dd>0.94–0.97</dd></div>
+            <div><dt>Citation precision</dt><dd>0.90–1.00</dd></div>
+            <div><dt>Unanswerable declined</dt><dd>100%</dd></div>
+            <div><dt>Automated tests</dt><dd>256</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── Toolkit ───────────── -->
+    <section class="section" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow">Toolkit</p>
+          <h2 class="sec-title" id="toolkit-title" data-split>What I reach for <em>daily.</em></h2>
+        </header>
+
+        <div class="kit">
+          <section class="kit-card kit-wide glass spot" data-reveal aria-labelledby="kit-genai">
+            <h3 class="kit-title" id="kit-genai">GenAI &amp; LLMs</h3>
+            <ul class="chips">
+              <li>RAG</li><li>Hybrid search (BM25 + dense)</li><li>Reranking</li><li>Embeddings</li><li>LLM agents</li><li>LangGraph</li><li>Tool calling</li><li>Prompt engineering</li><li>LLM evaluation</li><li>Guardrails: PII masking</li><li>Guardrails: prompt injection</li>
+            </ul>
+          </section>
+          <section class="kit-card glass spot" data-reveal style="--d:80ms" aria-labelledby="kit-lang">
+            <h3 class="kit-title" id="kit-lang">Languages</h3>
+            <ul class="chips chips-lg">
+              <li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li>
+            </ul>
+          </section>
+          <section class="kit-card glass spot" data-reveal aria-labelledby="kit-ml">
+            <h3 class="kit-title" id="kit-ml">ML, NLP &amp; CV</h3>
+            <ul class="chips">
+              <li>scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>pandas</li><li>NumPy</li><li>Hugging Face</li><li>ONNX Runtime</li><li>NER</li><li>Transfer learning</li>
+            </ul>
+          </section>
+          <section class="kit-card glass spot" data-reveal style="--d:80ms" aria-labelledby="kit-backend">
+            <h3 class="kit-title" id="kit-backend">Backend &amp; Data</h3>
+            <ul class="chips">
+              <li>FastAPI</li><li>Pydantic</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>pgvector</li><li>Qdrant</li><li>REST APIs</li><li>JWT auth</li><li>RBAC</li>
+            </ul>
+          </section>
+          <section class="kit-card glass spot" data-reveal style="--d:160ms" aria-labelledby="kit-front">
+            <h3 class="kit-title" id="kit-front">Frontend &amp; DevOps</h3>
+            <ul class="chips">
+              <li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Docker</li><li>GitHub Actions</li><li>Git</li><li>pytest</li><li>Prometheus</li>
+            </ul>
+          </section>
+          <section class="kit-card kit-full glass spot" data-reveal aria-labelledby="kit-platforms">
+            <h3 class="kit-title" id="kit-platforms">LLM platforms I've shipped against</h3>
+            <div class="marquee" aria-hidden="true">
+              <div class="marquee-track">
+                <span>Anthropic Claude</span><span>OpenAI</span><span>Google Gemini</span><span>Groq</span><span>NVIDIA NIM</span><span>Ollama</span>
+                <span>Anthropic Claude</span><span>OpenAI</span><span>Google Gemini</span><span>Groq</span><span>NVIDIA NIM</span><span>Ollama</span>
+              </div>
+            </div>
+            <p class="sr">Anthropic Claude, OpenAI, Google Gemini, Groq, NVIDIA NIM and Ollama.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Journey ───────────── -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow">Journey</p>
+          <h2 class="sec-title" id="journey-title" data-split>Education and <em>wins.</em></h2>
+        </header>
+
+        <div class="journey">
+          <ol class="timeline" data-timeline>
+            <li class="tl-item">
+              <span class="tl-node" aria-hidden="true"></span>
+              <div class="tl-card glass spot" data-reveal>
+                <p class="tl-when">2024 – 2028 <span class="dim">(expected)</span></p>
+                <h3 class="tl-what">B.E. in Artificial Intelligence and Machine Learning</h3>
+                <p class="tl-where">BMS Institute of Technology and Management, Bengaluru</p>
+                <p class="tl-score"><span class="score">8.09</span><span class="dim">/ 10 CGPA</span></p>
+              </div>
+            </li>
+            <li class="tl-item">
+              <span class="tl-node" aria-hidden="true"></span>
+              <div class="tl-card glass spot" data-reveal style="--d:80ms">
+                <p class="tl-when">Class XII · PUC</p>
+                <h3 class="tl-what">St. Joseph College of Commerce and Science</h3>
+                <p class="tl-score"><span class="score">93.6%</span></p>
+              </div>
+            </li>
+            <li class="tl-item">
+              <span class="tl-node" aria-hidden="true"></span>
+              <div class="tl-card glass spot" data-reveal style="--d:160ms">
+                <p class="tl-when">Class X</p>
+                <h3 class="tl-what">Balmandir High School</h3>
+                <p class="tl-score"><span class="score">97.6%</span></p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="wins">
+            <article class="win glass spot" data-reveal>
+              <div class="medal" aria-hidden="true"><span>3</span></div>
+              <p class="tile-label">Achievement</p>
+              <h3 class="win-title">3rd place for an AI-based Task Scheduler</h3>
+              <p class="win-text">Placed third at a competitive technical event with an AI-driven task scheduling system.</p>
+            </article>
+            <article class="win glass spot" data-reveal style="--d:80ms">
+              <p class="tile-label">Hackathons</p>
+              <h3 class="win-title">Multiple hackathons</h3>
+              <p class="win-text">Beyond the podium finish above, I've taken part in several hackathons, building AI projects against the clock.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Contact ───────────── -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact glass" data-reveal>
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="drops" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="eyebrow">Contact</p>
+          <h2 class="contact-title" id="contact-title">Hiring an AI/ML intern? <em>Let's talk.</em></h2>
+          <p class="contact-lede">I'm looking for AI/ML engineering internships where I can build LLM, RAG and ML systems and measure them properly. The fastest way to reach me is email.</p>
+
+          <div class="email-row">
+            <span class="email glass" data-liquid data-liquid-scale="28" data-liquid-bezel="16" data-liquid-blur="6">
+              <svg><use href="#i-mail"/></svg>
+              <span class="email-text" id="email-text">hardikgaonkar2025@gmail.com</span>
+            </span>
+            <button class="btn btn-primary copy" type="button" data-copy="hardikgaonkar2025@gmail.com" data-liquid data-liquid-scale="30" data-liquid-bezel="14" data-liquid-blur="6">
+              <svg class="i-copy"><use href="#i-copy"/></svg><svg class="i-check"><use href="#i-check"/></svg>
+              <span class="copy-label">Copy email</span>
+            </button>
+          </div>
+
+          <ul class="socials">
+            <li><a class="social glass" href="mailto:hardikgaonkar2025@gmail.com"><svg><use href="#i-mail"/></svg><span>Email</span></a></li>
+            <li><a class="social glass" href="https://www.linkedin.com/in/hardik-gaonkar-b7706a376" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg><span>LinkedIn</span></a></li>
+            <li><a class="social glass" href="https://github.com/hrdk6" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg><span>GitHub</span></a></li>
+            <li><a class="social glass" href="assets/Hardik_Gaonkar_Resume.pdf" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg><span>Résumé</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© <span data-year>2026</span> Hardik Santosh Gaonkar · Bengaluru, India</p>
+        <a href="#top" class="to-top">Back to top <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast glass" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/aurora.js" defer></script>
+  <script src="assets/js/liquid-glass.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
