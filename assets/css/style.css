@@ -731,14 +731,15 @@ main, .footer, .nav-wrap { position: relative; z-index: 1; }
   animation: rise 1.1s var(--ease-out) 1s backwards;
 }
 .hero-focus li { display: inline-flex; align-items: center; gap: 10px; }
-.hero-focus li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--mint);
-  box-shadow: 0 0 8px var(--mint);
+.hero-focus li + li::before {
+  content: "/";
+  margin-right: 12px;
+  color: var(--text-3);
 }
+.hero-focus { gap: 8px 12px; }
+.status { padding: 0 14px 0 18px; }
+.status-arrow { width: 15px; height: 15px; opacity: 0.6; transition: transform 0.4s var(--ease-spring), opacity 0.3s; }
+.status:hover .status-arrow { transform: translate(2px, -2px); opacity: 1; }
 
 /* eval terminal */
 .term {
