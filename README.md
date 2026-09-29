@@ -11,7 +11,9 @@ It's a static site with no build step and no dependencies: plain HTML, CSS and J
 - **Liquid glass UI.** Frosted glass panels with specular rim light and a cursor spotlight. In Chromium browsers (Chrome, Edge, Arc, Brave), the nav, buttons and hero lens also *refract* what sits behind them. A displacement map is generated for each element's shape and applied as an SVG `backdrop-filter`. Safari and Firefox get the frosted version.
 - **Flowing background.** A domain-warped noise field in WebGL. It drifts as you scroll and moves out of the way of the cursor. It renders at reduced resolution, is capped at 30fps and pauses in background tabs.
 - **Draggable lens** in the hero that magnifies the name as it passes over it.
-- **Live diagrams** for each project: CareFlow AI's access-controlled request path, PatchPilot's agent and repair loop, and GroundTruth's sentence verification.
+- **AegisOps incident replay.** The flagship incident, as recorded live, replayed on a 210-second timeline: each stage lights up in turn, coloured by what acts (the injected fault, the reasoning engine or the Go controller). Hover a stage, or focus the timeline and use the arrow keys, to read what happened. It plays once when scrolled into view, and Replay runs it again.
+- **Live diagrams** for the other projects: CareFlow AI's access-controlled request path, PatchPilot's agent and repair loop, and GroundTruth's sentence verification.
+- **Charts that show uncertainty.** AegisOps's pass rate is plotted per run with its 95% interval. Chart colours are the brand hues stepped into the dark-surface lightness band and checked for colour-blind separation.
 - **Accessible by default.** Semantic landmarks, a skip link and visible focus states. `prefers-reduced-motion` turns off animation, and all content is visible without JavaScript.
 
 ## Structure
@@ -21,7 +23,7 @@ index.html                  page content
 assets/css/style.css        design tokens, glass system, layout
 assets/js/aurora.js         WebGL background
 assets/js/liquid-glass.js   refraction filters for [data-liquid] elements
-assets/js/main.js           nav, reveals, counters, terminal, lens, diagrams
+assets/js/main.js           nav, terminal, lens, diagrams, incident replay
 assets/img/                 favicon and social preview image
 assets/Hardik_Gaonkar_Resume.pdf
 ```
